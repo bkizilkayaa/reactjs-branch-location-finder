@@ -22,7 +22,7 @@ const Search = ({branchs,setSearchingBranch}) => {
         placeholder="Adres giriniz -en az 3 karakter-"
       ></input>
       <button className='button-ara' onClick={() =>{
-        if(searchAddress.length>=3)
+        if(searchAddress.length>2)
           searchBranch(searchAddress);
       }}>Ara</button>
     </div>
