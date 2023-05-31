@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Map from './Map';
+import '../style/BranchTable.css';
 
 const BranchTable = ({ searchingBranch }) => {
   const [selectedBranch, setSelectedBranch] = useState(null);

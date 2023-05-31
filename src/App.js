@@ -1,5 +1,7 @@
 import React, {useState,useEffect } from 'react';
 import './App.css';
+import Search from './components/Search';
+import BranchTable from './components/BranchTable';
 
 const API_URL="https://openapi.izmir.bel.tr/api/izsu/subeler";
  
@@ -14,7 +16,7 @@ const API_URL="https://openapi.izmir.bel.tr/api/izsu/subeler";
         return res.json();
       }
       })
-      .then(data=>setSubeler(data))
+      .then(data=>setBranchs(data))
       .catch(err=>{console.log(err)});
     },[])
 

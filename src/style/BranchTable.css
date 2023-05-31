@@ -1,0 +1,30 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    padding: 1rem;
+  }
+td,th{
+    border:2px solid #000000;
+    text-align: left;
+    padding: 9px;
+}
+tr{
+    background-color: #EAF7FE;
+}
+.pagination{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .scroll-down.visible {
+    opacity: 1;
+  }

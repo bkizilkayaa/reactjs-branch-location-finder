@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+.App{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-family: var(--font-raleway);
+}
+.bg{
+  background: linear-gradient(rgba(255, 230, 230, 0.6), rgba(0, 0, 0, 1)), 
+  url(./img/izmirbg.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 155vh;
+}
+.container {
+  width: 75%;
+  padding: 20px;
+  margin: 20px;
+  background-color: #dfdfcf;  
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} 
+.container .h1-grad{
+  font-size: 3rem;
+  letter-spacing: 0.9px;
+  background: linear-gradient(
+    90deg,
+    rgb(17, 30, 50) 0%,
+    rgba(43, 107, 98, 0.8) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+.sube-container{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+:root {
+  --font-roboto: "Roboto Slab", serif;
+  --font-raleway: "Raleway", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  font-family: var(--font-roboto);
+  background-color: #003652;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 400px) {
+  .app {
+    padding: 4rem 1rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+button{
+  font-size: 1rem;
+  font-family: var(--font-raleway);
+  font-weight: 500;
+  padding-right: 1rem;
 }
