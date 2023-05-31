@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+https://github.com/bkizilkayaa/reactjs-branch-location-finder/assets/88281419/22a88ba9-77ab-45ff-b51b-7c0f7f95d7ce
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# [TR] İzmir-İzsu Tahsilat Şubesi Bulucu
+<h2>Bu App girilen şube adresine veya şube ismine göre bulunan şubelerin listelenmesini ve google haritalarda gösterimini sağlıyor. </h2>
+<h3> Bu projede API kullanımı (fetch), react hooks(useState,useEffect), pagination gibi kavramlarla uğraştım. </h3>
 
-In the project directory, you can run:
+Kullanılan API : https://openapi.izmir.bel.tr/api/izsu/subeler
 
-### `npm start`
+JSON formatında çıktısı verilmiş API'dan su tahsilat şubelerinin verilerinin alınıp anlamlı hale getirilmesi.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img width="1080" alt="apiResponse" src="https://github.com/bkizilkayaa/reactjs-branch-location-finder/assets/88281419/0f58c6ca-c1c1-4c40-8c1c-2cb0d3e54251">
 
-### `npm test`
+# [EN] Izmir-Izsu Branch And Location Finder
+<h2>(Izsu is responsible for carry out water and sewerage services and to establish all kinds of facilities required for this purpose.) </h2>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h2>This App lists the branches according to the branch address or branch name entered and displays them on google maps. </h2>
+<h3> In this project, I dealt with concepts such as API usage (fetch), react hooks (useState, useEffect), pagination. </h3>
 
-### `npm run build`
+API Used : https://openapi.izmir.bel.tr/api/izsu/subeler
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Retrieving the data of water collection branches from the API outputted in JSON format(which you can find upside) and making it meaningful.
