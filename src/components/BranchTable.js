@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Map from './Map';
 import '../style/BranchTable.css';
 
@@ -13,16 +13,28 @@ const BranchTable = ({ searchingBranch }) => {
 
   const handleOnClick = (branch) => {
     setSelectedBranch(branch);
-    handleScrollToBottom();
   };
 
-  const handleScrollToBottom = () => {
+  useEffect(()=>{
+    handleScrollToMap();
+  },[selectedBranch]);
+
+  useEffect(()=>{
+    setCurrentPage(1);
+  },[searchingBranch]);
+  
+  const handleScrollToMap = () => {
+    const mapContainer = document.getElementById("map-container");
+    if (mapContainer) {
+        mapContainer.scrollIntoView({ behavior: 'smooth' });
+      }    
+  };
+  const handleScrollToTop = () => {
     window.scrollTo({
-      top: document.documentElement.scrollHeight,
+      top: 0,
       behavior: 'smooth',
     });
   };
-
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
@@ -56,7 +68,10 @@ const BranchTable = ({ searchingBranch }) => {
         {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index}
-            onClick={() => handlePageChange(index + 1)}
+            onClick={() => {
+                handlePageChange(index + 1);
+                handleScrollToTop();
+            }}
             className={currentPage === index + 1 ? 'active' : ''}
           >
             {index + 1}

@@ -27,4 +27,7 @@ tr{
   
   .scroll-down.visible {
     opacity: 1;
-  }
+}
+button{
+    margin: 1px;
+}

@@ -33,7 +33,7 @@ const API_URL="https://openapi.izmir.bel.tr/api/izsu/subeler";
                 searchingBranch={searchingBranch}
                 />
               ) : (
-                  <h2>Arama yapiniz</h2>
+                  <h2>Sonuc yok</h2>
                 )}
             </div>
         </div>

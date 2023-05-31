@@ -8,7 +8,7 @@ const Map = ({branch})=>{
         ifameData.src=`https://maps.google.com/maps?q=${lat},${lon}&hl=es;&output=embed`;
     });
     return(
-         <div style={{paddingTop:"10px"}}>
+         <div id="map-container" style={{paddingTop:"10px"}}>
             <iframe id="iframeId" title="map" height="350px" width="100%"></iframe>
         </div>     
     );
