@@ -16,7 +16,6 @@ const Search = ({branchs,setSearchingBranch}) => {
   return (
     <div className='searchBar'>
       <input
-        style={{ padding: "10px", margin: "10px" }}
         value={searchAddress}
         onChange={(e) => setSearchAddress(e.target.value)}
         placeholder="Adres giriniz -en az 3 karakter-"
